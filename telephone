@@ -1,0 +1,14 @@
+tel={}
+n=int(input("enter number of contacts:"))
+for i in range(n):
+   name=input("enter name:")
+   num=input("enter phone number:")
+   tel[name]=num
+print("\ntelephone directory")
+for i in tel:
+   print(i,":",tel[i])
+search=input("enter name to search:")
+if search in tel:
+    print("phone number is:",tel[search])
+else:
+    print("contact not found")
